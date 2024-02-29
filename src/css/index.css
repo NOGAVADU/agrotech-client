@@ -1,0 +1,19 @@
+html,body{
+    height: 100%;
+    font-size: var(--main-fontSize);
+    color: var(--main-color);
+    font-family: var(--main-font);
+}
+
+#root{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    min-height: calc(100vh);
+    flex: 1 1 auto;
+}
+
+

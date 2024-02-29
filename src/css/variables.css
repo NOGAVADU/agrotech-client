@@ -1,0 +1,13 @@
+:root {
+    /* Цвета */
+    --bg-color-main: #fdc006;
+    --main-color: black;
+    /* Шрифты */
+    --main-font: PtSans, sans-serif;
+    --accent-font: Play, sans-serif;
+    --main-fontSize: 20px;
+    --title-fontSize: 30px;
+    /* Анимации */
+    --transition-color: color 0.3s ease-out, background-color 0.3s ease-out,
+        border 0.3s ease-out;
+}

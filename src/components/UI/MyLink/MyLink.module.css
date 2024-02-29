@@ -1,0 +1,23 @@
+.link{
+    padding: 1rem;
+    color: currentColor;
+    transition: text-shadow 0.3s, color 0.4s;
+}
+
+.link__active{
+    border-bottom: 3px solid black;
+    margin-bottom: -3px;
+}
+
+.link:hover{
+    color: #868686;
+}
+
+.link__active:hover{
+    cursor: default;
+    color: black;
+}
+
+.link:focus-visible{
+    outline: 2px solid black;
+}

@@ -1,0 +1,43 @@
+@font-face {
+  font-family: PtSans;
+  src: url(./PTSans-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: PtSans;
+  src: url(./PTSans-Bold.ttf) format('truetype');
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: PtSans;
+  src: url(./PTSans-Regular.ttf) format('truetype');
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: PtSans;
+  src: url(./PTSans-BoldItalic.ttf) format('truetype');
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Play;
+  src: url(./Play-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Play;
+  src: url(./Play-Bold.ttf) format('truetype');
+  font-weight: bold;
+  font-display: swap;
+}
