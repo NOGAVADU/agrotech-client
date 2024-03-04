@@ -1,0 +1,51 @@
+.account__card{
+    border: 2px solid black;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.09);
+    padding: 2rem;
+    max-width: 60%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template: auto 1fr / 1fr;
+    gap: 1rem;
+}
+
+.account__title{
+    font-size: var(--title-fontSize);
+}
+
+.account__control{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.account__link{
+    color: black;
+    border-top: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.account__link:hover{
+    color: #868686;
+}
+
+.account__logOut{
+    font-size: inherit;
+    margin-top: auto;
+    color: black;
+    border: 2px solid currentColor;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s;
+}
+
+.account__logOut:hover{
+    color: darkred;
+}

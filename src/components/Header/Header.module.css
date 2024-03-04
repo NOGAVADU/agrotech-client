@@ -1,7 +1,9 @@
 header{
+    position: relative;
+    z-index: 1;
     background: var(--bg-color-main);
     padding: 0.5rem 0;
-    box-shadow: 0 0 5px #676767;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.69);
 }
 
 .header__container{
@@ -44,6 +46,44 @@ header{
     gap: 0.5rem;
 }
 
+.header__auth_links{
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.auth__link{
+    padding: 1rem 0;
+    display: flex;
+    gap: .5rem;
+    color: currentColor;
+    transition: text-shadow 0.3s, color 0.4s;
+}
+
+.auth__link:hover{
+    color: #868686;
+}
+
+.auth__link:focus-visible{
+    outline: 2px solid black;
+}
+
 .auth__icon{
-    font-size: 1.2rem;
+}
+
+.header__account{
+    justify-self: right;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.account__link{
+
+}
+
+.account__logOutBtn{
+    border-radius: 1rem;
+    font-size: inherit;
+    padding: 0.5rem 1rem;
 }

@@ -1,0 +1,14 @@
+.section {
+    padding: 2rem;
+    background-color: rgba(201, 201, 201, 0.52);
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.31);
+}
+
+.info__title{
+    font-size: var(--title-fontSize);
+}
+
+.info__text{
+
+}

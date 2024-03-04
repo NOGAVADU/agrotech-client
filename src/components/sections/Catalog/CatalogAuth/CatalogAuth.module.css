@@ -1,0 +1,29 @@
+.container{
+    z-index: 1;
+    position: absolute;
+    inset: 0 0 0 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: grid;
+    place-items: center;
+}
+
+.card{
+    width: max(300px, 50%);
+    border: 2px solid currentColor;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #fff;
+}
+
+.title{
+    font-size: var(--title-fontSize);
+    text-align: center;
+}
+
+.text{
+    color: red;
+}
+
+.link{
+
+}

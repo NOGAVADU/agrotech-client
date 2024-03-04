@@ -1,0 +1,29 @@
+.search__container{
+    background: #fff;
+    margin-bottom: .5rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    border: 2px solid currentColor;
+    width: min(700px, 100%);
+    display: flex;
+}
+
+.search__input{
+    border-radius: 1rem 0 0 1rem;
+    font-size: inherit;
+    padding: .2rem 0.5rem;
+    width: 100%;
+}
+
+.search__button{
+    background: var(--bg-color-main);
+    border-radius: 1rem;
+    font-size: inherit;
+    padding: .2rem 1em;
+    transition: all 0.3s;
+}
+
+.search__button:hover{
+    background-color: #d9a600;
+    color: #868686;
+}

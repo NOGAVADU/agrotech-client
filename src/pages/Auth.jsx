@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import AuthWindow from "../components/sections/Auth/AuthWindow/AuthWindow.jsx";
 
 const Auth = () => {
     return (
-        <div>
-            Auth
-        </div>
+        <main>
+            <AuthWindow/>
+        </main>
     );
 };
 

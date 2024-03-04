@@ -12,8 +12,13 @@ html,body{
 }
 
 main{
-    min-height: calc(100vh);
+    position: relative;
+    background: url("../assets/image/background.jpg");
+    min-height: calc(100vh - 100px);
     flex: 1 1 auto;
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(auto, 1fr)) / 1fr;
+    gap: 2rem;
 }
 
 

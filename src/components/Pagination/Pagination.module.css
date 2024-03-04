@@ -1,0 +1,21 @@
+.pagination__list{
+    margin-top: -1.8rem;
+    display: flex;
+    gap: 0.1rem;
+}
+
+.pagination__item{
+    cursor: pointer;
+    border: 2px solid currentColor;
+    padding: 0.2rem;
+}
+
+.pagination__btn{
+    padding: 0.2rem;
+    border: 2px solid currentColor;
+    background: transparent;
+}
+
+.active{
+    color: var(--bg-color-main);
+}
