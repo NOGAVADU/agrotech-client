@@ -11,7 +11,6 @@ const CatalogSearch = observer(() => {
     const findAllItems = (e) => {
         e.preventDefault()
         findItems(value).then(data => {
-            console.log(data)
             items.setItems(data.rows)
             items.setTotalCount(data.count)
         })
