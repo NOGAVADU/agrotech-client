@@ -13,5 +13,9 @@ export const fetchFavorite = async (id) => {
     const {data} = await $authHost.get('api/favorite', {params: {favoriteId: id}} )
     return data
 }
+export const fetchItemsFavItems = async (id) => {
+    const {data} = await $authHost.get('api/favorite/items', {params: {id}})
+    return data
+}
 
 

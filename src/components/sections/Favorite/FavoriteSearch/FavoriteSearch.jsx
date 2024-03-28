@@ -1,20 +1,13 @@
-import React, {useContext, useEffect, useState} from 'react';
-import cl from './CatalogSearch.module.css'
-import {Context} from "../../../../main.jsx";
-import {observer} from "mobx-react-lite";
+import React, { useState} from 'react';
+import cl from "../../Catalog/CatalogSearch/CatalogSearch.module.css";
 import {findItems} from "../../../../http/CatalogApi.js";
 
-const CatalogSearch = observer(() => {
-    const {items} = useContext(Context)
+const FavoriteSearch = ({favItems, setFavItems}) => {
     const [value, setValue] = useState('')
 
     const findAllItems = (e) => {
         e.preventDefault()
-        findItems(value, items.page, items.limit).then(data => {
-            items.setItems(data.rows)
-            items.setTotalCount(data.count)
-            console.log(items.items)
-        })
+        setFavItems(favItems.filter(item => item.name.includes(value.toLowerCase())))
     }
 
     return (
@@ -32,6 +25,6 @@ const CatalogSearch = observer(() => {
             </button>
         </form>
     );
-});
+};
 
-export default CatalogSearch;
+export default FavoriteSearch;

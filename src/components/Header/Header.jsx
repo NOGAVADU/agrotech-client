@@ -15,6 +15,7 @@ import {faDoorOpen, faRightFromBracket, faUserCircle} from "@fortawesome/free-so
 import {Link, useMatch} from "react-router-dom";
 import {Context} from "../../main.jsx";
 import {observer} from "mobx-react-lite";
+import HeaderBurger from "./HeaderBurger.jsx";
 
 
 const Header = observer(() => {
@@ -25,8 +26,9 @@ const Header = observer(() => {
             <div className={cl.header__container}>
                 <div className={cl.header__logo}>
                     <Logo/>
-                    <figcaption className={cl.logo__text}>АгроТехСервис</figcaption>
+                    <figcaption className={cl.logo__text}>АгроТех-Сервис</figcaption>
                 </div>
+                <HeaderBurger/>
                 <nav className={cl.header__nav}>
                     <ul className={cl.nav__list}>
                         <MyLink path={ABOUT_US_ROUTE}>О нас</MyLink>
@@ -36,7 +38,7 @@ const Header = observer(() => {
                 </nav>
                 {user.isAuth === true ?
                     (<div className={cl.header__account}>
-                        <Link to={ACCOUNT_ROUTE} className={cl.auth__link}><FontAwesomeIcon icon={faUserCircle}/>Личный
+                        <Link to={ACCOUNT_ROUTE} className={cl.auth__link}><FontAwesomeIcon icon={faUserCircle} title={'Личный кабинет'}/>Личный
                             кабинет</Link>
                     </div>) :
                     (<div className={cl.header__auth}>

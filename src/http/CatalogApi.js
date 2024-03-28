@@ -1,7 +1,11 @@
 import {$authHost, $host} from "./index";
 
-export const createItem = async (type) => {
+export const createItem = async (item) => {
     const {data} = await $authHost.post('api/item', item)
+    return data
+}
+export const deleteItem = async (id) => {
+    const {data} = await $authHost.delete('api/item', {data: {id: id}})
     return data
 }
 

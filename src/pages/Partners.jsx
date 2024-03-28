@@ -1,9 +1,12 @@
 import React from 'react';
+import PartnersList from "../components/sections/Partners/PartnersList/PartnersList.jsx";
+import PartnersContacts from "../components/sections/Partners/PartnersContacts/PartnersContacts.jsx";
 
 const Partners = () => {
     return (
         <main>
-            Partners
+            <PartnersList/>
+            <PartnersContacts/>
         </main>
     );
 };
