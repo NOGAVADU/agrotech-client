@@ -73,3 +73,10 @@
 .form__btn:hover{
     background: rgba(0, 0, 0, 0.15);
 }
+
+@media (width <= 768px) {
+    .form__footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}

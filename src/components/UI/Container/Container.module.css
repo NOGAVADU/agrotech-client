@@ -4,3 +4,15 @@
     margin: 0 auto;
     padding: 0 2rem;
 }
+
+@media (width <= 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+@media (width <= 450px) {
+    .container {
+        padding: 0 .5rem;
+    }
+}

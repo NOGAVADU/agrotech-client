@@ -12,15 +12,20 @@
 
 .account__title{
     font-size: var(--title-fontSize);
+    margin-bottom: 2rem;
 }
 
-.account__control{
+.account__control {
     display: flex;
+    width: 100%;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
 }
 
 .account__link{
+    width: 100%;
+    text-align: center;
     color: black;
     border-top: 2px solid currentColor;
     border-bottom: 2px solid currentColor;
@@ -48,4 +53,17 @@
 
 .account__logOut:hover{
     color: darkred;
+}
+
+@media (width <= 768px) {
+    .account__card {
+        padding: 1rem;
+        max-width: 100%;
+    }
+}
+
+@media (width <= 450px) {
+    .account__card {
+        padding: .5rem;
+    }
 }
