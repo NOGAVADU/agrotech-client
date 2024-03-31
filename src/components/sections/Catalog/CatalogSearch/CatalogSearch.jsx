@@ -13,7 +13,6 @@ const CatalogSearch = observer(() => {
         findItems(value, items.page, items.limit).then(data => {
             items.setItems(data.rows)
             items.setTotalCount(data.count)
-            console.log(items.items)
         })
     }
 

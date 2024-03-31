@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
-import {createItem, createManyItems} from "../../http/CatalogApi.js";
+import React, {useContext, useState} from 'react';
+import {createItem, createManyItems, findItems} from "../../http/CatalogApi.js";
 import cl from './ExelUpload.module.css'
+import {Context} from "../../main.jsx";
 
 const ExelUpload = () => {
+    const {items} = useContext(Context)
     const [file, setFile] = useState(null)
     const uploadExel = () => {
         const formData = new FormData()
@@ -10,12 +12,16 @@ const ExelUpload = () => {
         createManyItems(formData).then(data => {
                 data.forEach(item => {
                     const [name, article, price, state, source] = item
-                    createItem({
-                        name: name,
-                        article: article,
-                        price: price,
-                        state: state,
-                        source: source
+                    findItems(name, items.page, items.limit).then(data => {
+                        if (data.rows.length === 0) {
+                            createItem({
+                                name: name,
+                                article: article,
+                                price: price,
+                                state: state,
+                                source: source
+                            })
+                        }
                     })
                 })
             }
