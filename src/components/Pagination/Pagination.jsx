@@ -36,15 +36,23 @@ const Pagination = observer(() => {
                 >
                     <FontAwesomeIcon icon={faChevronLeft}/>
                 </button>
-                {pages.map((page) => (
-                    <PaginationItem
-                        key={page}
-                        active={items.page === page}
-                        onClick={() => items.setPages(page)}
-                    >
-                        {page}
-                    </PaginationItem>
-                ))}
+                {items.page >= 3 ?
+                    <div className={cl.end}>
+                        <PaginationItem onClick={() => items.setPages(1)}>1</PaginationItem>
+                        <span className={cl.placeholder}>...</span>
+                    </div>
+                    : ''}
+
+                {items.page !== 1 && <PaginationItem onClick={prevPage}>{items.page - 1}</PaginationItem>}
+                <PaginationItem active={true}>{items.page}</PaginationItem>
+                {items.page !== pages.length && <PaginationItem onClick={nextPage}>{items.page + 1}</PaginationItem>}
+
+                {items.page <= pages.length - 3 ?
+                    <div className={cl.end}>
+                        <span className={cl.placeholder}>...</span>
+                        <PaginationItem onClick={() => items.setPages(pages.length)}>{pages.length}</PaginationItem>
+                    </div>
+                    : ''}
                 <button
                     className={cl.pagination__btn}
                     onClick={nextPage}

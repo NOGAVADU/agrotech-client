@@ -4,6 +4,11 @@ export const createItem = async (item) => {
     const {data} = await $authHost.post('api/item', item)
     return data
 }
+export const createManyItems = async (file) => {
+    const {data} = await $authHost.post('api/item/many', file)
+    return data
+}
+
 export const deleteItem = async (id) => {
     const {data} = await $authHost.delete('api/item', {data: {id: id}})
     return data

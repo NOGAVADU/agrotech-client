@@ -9,6 +9,7 @@ import CatalogInfo from "../components/sections/Catalog/CatalogInfo/CatalogInfo.
 import CatalogAuth from "../components/sections/Catalog/CatalogAuth/CatalogAuth.jsx";
 import Pagination from "../components/Pagination/Pagination.jsx";
 import ItemCreate from "../components/ItemCreate/ItemCreate.jsx";
+import ExelUpload from "../components/ExelUpload/ExelUpload.jsx";
 
 const Catalog = observer(() => {
     const {items, user} = useContext(Context)
@@ -32,11 +33,14 @@ const Catalog = observer(() => {
             {!user.isAuth && (
                 <CatalogAuth/>
             )}
-            <div style={!user.isAuth ? {filter:'blur(0.2rem)', pointerEvents:'none'} : {filter: "blur(0)"}}>
+            <div style={!user.isAuth ? {filter: 'blur(0.2rem)', pointerEvents: 'none'} : {filter: "blur(0)"}}>
                 <CatalogInfo/>
                 <Container>
                     {user.user.role === "ADMIN" &&
-                        <ItemCreate/>
+                        <div>
+                            <ItemCreate/>
+                            <ExelUpload/>
+                        </div>
                     }
                     <ItemsList>
                         {items.items.length ? (

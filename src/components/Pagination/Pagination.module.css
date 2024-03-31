@@ -1,5 +1,6 @@
 .pagination__list{
     margin-top: -1.8rem;
+    margin-bottom: 2rem;
     display: flex;
     gap: 0.1rem;
 }
@@ -18,4 +19,14 @@
 
 .active{
     color: var(--bg-color-main);
+}
+
+.end {
+    gap: 0.1rem;
+    display: flex;
+}
+
+.placeholder{
+    text-align: center;
+    align-self: end;
 }

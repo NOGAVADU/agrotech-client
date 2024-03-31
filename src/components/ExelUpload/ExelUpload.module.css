@@ -1,0 +1,21 @@
+.title{
+    margin-bottom: 0.5rem;
+}
+
+.input {
+
+}
+
+.button {
+    background: transparent;
+    padding: 0.2rem 1rem;
+    border: 2px solid black;
+}
+
+.button:hover{
+    background: rgba(134, 134, 134, 0.37);
+}
+
+.loader {
+
+}

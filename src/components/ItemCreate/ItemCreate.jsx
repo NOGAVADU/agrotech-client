@@ -18,7 +18,7 @@ const ItemCreate = observer(() => {
             price: price,
             state: state,
             source: source
-        }).then(data => console.log(data))
+        })
 
         setName('')
         setArticle('')
