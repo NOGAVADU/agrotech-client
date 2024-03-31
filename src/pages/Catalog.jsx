@@ -5,7 +5,6 @@ import {observer} from "mobx-react-lite";
 import ItemsList from "../components/sections/Catalog/ItemsList/ItemsList.jsx";
 import Container from "../components/UI/Container/Container.jsx";
 import ListItem from "../components/sections/Catalog/ItemsList/ListItem.jsx";
-import CatalogSearch from "../components/sections/Catalog/CatalogSearch/CatalogSearch.jsx";
 import CatalogInfo from "../components/sections/Catalog/CatalogInfo/CatalogInfo.jsx";
 import CatalogAuth from "../components/sections/Catalog/CatalogAuth/CatalogAuth.jsx";
 import Pagination from "../components/Pagination/Pagination.jsx";
@@ -33,7 +32,7 @@ const Catalog = observer(() => {
             {!user.isAuth && (
                 <CatalogAuth/>
             )}
-            <div style={{filter: !user.isAuth ? 'blur(0.2rem)' : 'blur(0)'}}>
+            <div style={{filter: !user.isAuth ? 'blur(0.2rem)' : 'blur(0)', pointerEvents: !user.isAuth ? 'none' : ''}}>
                 <CatalogInfo/>
                 <Container>
                     {user.user.role === "ADMIN" &&

@@ -8,7 +8,7 @@
 
 .contacts__container {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    margin: 1rem 0;
+    margin: 1rem 0 3rem;
     background: #b9b9b9;
     padding: 1rem 0;
 }

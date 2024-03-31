@@ -70,7 +70,9 @@ const HeaderBurger = () => {
                                     Регистрация
                                 </Link>
                                 /
-                                <Link to={LOGIN_ROUTE} className={cl.auth__link}>
+                                <Link to={LOGIN_ROUTE}
+                                      className={cl.auth__link}
+                                      onClick={handleLinkClick}>
                                     Войти
                                 </Link>
                             </div>

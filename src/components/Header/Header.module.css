@@ -95,6 +95,8 @@ header {
 }
 
 .burger__button {
+    position: relative;
+    z-index: 1;
     cursor: pointer;
     padding: 1rem;
 }
@@ -126,7 +128,6 @@ header {
     position: fixed;
     inset: 0 0 0 0;
     background: #b9b9b9;
-    z-index: -1;
     transform: translateX(100%);
     transition: transform 0.3s ease-out;
     display: flex;
@@ -194,6 +195,9 @@ header {
 }
 
 @media (width <= 700px) {
+    .burger__button{
+        padding: 0.5rem;
+    }
     .header__account, .header__auth{
         display: none;
     }

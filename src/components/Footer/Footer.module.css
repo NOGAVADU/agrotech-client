@@ -1,6 +1,5 @@
 .footer {
     padding: 1rem;
-    margin-top: 2rem;
     min-height: 50px;
     background: var(--bg-color-main);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.69);
@@ -27,7 +26,7 @@
 }
 
 .logo__imgContainer {
-    min-width: 67px;
+    width: 67px;
     height: 50px;
 }
 
