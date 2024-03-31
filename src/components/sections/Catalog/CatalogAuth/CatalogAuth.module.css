@@ -7,7 +7,7 @@
 }
 
 .card{
-    position: relative;
+    z-index: 1;
     width: max(300px, 50%);
     border: 2px solid currentColor;
     padding: 1rem;

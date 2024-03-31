@@ -32,7 +32,7 @@ const Catalog = observer(() => {
             {!user.isAuth && (
                 <CatalogAuth/>
             )}
-            <div style={{filter: !user.isAuth ? 'blur(0.2rem)' : 'blur(0)', pointerEvents: !user.isAuth ? 'none' : ''}}>
+            <div style={!user.isAuth ? {filter:'blur(0.2rem)', pointerEvents:'none'} : {filter: "blur(0)"}}>
                 <CatalogInfo/>
                 <Container>
                     {user.user.role === "ADMIN" &&

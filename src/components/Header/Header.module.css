@@ -1,6 +1,6 @@
 header {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     background: var(--bg-color-main);
     padding: 0.5rem 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.69);
@@ -96,7 +96,7 @@ header {
 
 .burger__button {
     position: relative;
-    z-index: 1;
+    z-index: 99;
     cursor: pointer;
     padding: 1rem;
 }
