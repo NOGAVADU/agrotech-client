@@ -19,7 +19,7 @@ const PartnersContacts = () => {
                         <div className={cl.contacts__text}>
                             <Title>Напишите нам</Title>
                             <h3 className={cl.contacts__subtitle}>Мы свяжемся с вами в ближайшее время!</h3>
-                            <a className={cl.contacts__link} href={'#'}>Стать партнером</a>
+                            <a className={cl.contacts__link} href={'https://forms.gle/Nx4r33xNs5DFHigs5'} target='_blank'>Стать партнером</a>
                             <a className={cl.contacts__mail} href={'mailto:oooagrosupp@mail.ru'}>oooagrosupp@mail.ru</a>
                         </div>
                         <div className={cl.contacts__logo}>
