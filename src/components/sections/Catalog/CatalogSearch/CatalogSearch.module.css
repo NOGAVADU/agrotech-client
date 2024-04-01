@@ -16,6 +16,7 @@
 }
 
 .search__button{
+    color: black;
     background: var(--bg-color-main);
     border-radius: 1rem;
     font-size: inherit;
