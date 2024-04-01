@@ -36,11 +36,12 @@ const Catalog = observer(() => {
             <div style={!user.isAuth ? {filter: 'blur(0.2rem)', pointerEvents: 'none'} : {filter: "blur(0)"}}>
                 <CatalogInfo/>
                 <Container>
-                    {user.user.role === "ADMIN" &&
+                    {user.user.role === "ADMIN" || user.user.role === "SUPPLIER" ?
                         <div>
                             <ItemCreate/>
                             <ExelUpload/>
                         </div>
+                        : ''
                     }
                     <ItemsList>
                         {items.items.length ? (
