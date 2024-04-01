@@ -12,6 +12,7 @@
 }
 
 .pagination__btn{
+    color: black;
     padding: 0.2rem;
     border: 2px solid currentColor;
     background: transparent;
