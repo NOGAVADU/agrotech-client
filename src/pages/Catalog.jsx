@@ -11,7 +11,6 @@ import Pagination from "../components/Pagination/Pagination.jsx";
 import ItemCreate from "../components/ItemCreate/ItemCreate.jsx";
 import ExelUpload from "../components/ExelUpload/ExelUpload.jsx";
 import CatalogClearBtn from "../components/sections/Catalog/CatalogClearBtn/CatalogClearBtn.jsx";
-import DataChecker from "../components/DataChecker/DataCheker.jsx";
 
 const Catalog = observer(() => {
     const {items, user} = useContext(Context)
