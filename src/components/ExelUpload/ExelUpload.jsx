@@ -4,28 +4,14 @@ import cl from './ExelUpload.module.css'
 import {Context} from "../../main.jsx";
 
 const ExelUpload = () => {
-    const {items} = useContext(Context)
     const [file, setFile] = useState(null)
+    const [loading, setLoading] = useState(false)
+
     const uploadExel = () => {
+        setLoading(true)
         const formData = new FormData()
         formData.append('file', file)
-        createManyItems(formData).then(data => {
-                data.forEach(item => {
-                    const [name, article, price, state, source] = item
-                    findItems(name, items.page, items.limit).then(data => {
-                        if (data.rows.length === 0) {
-                            createItem({
-                                name: name,
-                                article: article,
-                                price: price,
-                                state: state,
-                                source: source
-                            })
-                        }
-                    })
-                })
-            }
-        )
+        createManyItems(formData).then(()=> setLoading(false))
     }
 
     return (
@@ -34,6 +20,7 @@ const ExelUpload = () => {
             <input className={cl.input} type="file" placeholder='Загрузите XLSX файл'
                    onChange={e => setFile(e.target.files[0])}/>
             <button className={cl.button} onClick={uploadExel}>Загрузить</button>
+             <span style={{display: loading ? 'inline' : 'none'}}>Загрузка...</span>
         </div>
     );
 };

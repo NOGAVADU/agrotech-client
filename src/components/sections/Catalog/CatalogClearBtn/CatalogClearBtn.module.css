@@ -1,0 +1,68 @@
+.btn {
+    margin: 1rem 0;
+    padding: 0.2rem 1rem;
+    border: 2px solid black;
+    background: rgba(126, 0, 0, 0.4);
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: #000000b7;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal__content.active {
+    transform: scale(1);
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 1rem;
+    border-radius: 1rem;
+    transform: scale(0.5);
+    transition: all 0.3s;
+    background-color: #fff;
+    text-align: center;
+}
+
+.modal__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.modal__header {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.modal__controlsCloseBtn {
+    display: grid;
+    place-items: center;
+    background: transparent;
+    color: black;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
