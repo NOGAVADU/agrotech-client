@@ -3,6 +3,7 @@ import cl from './Footer.module.css'
 import MyLink from "../UI/MyLink/MyLink.jsx";
 import {ABOUT_US_ROUTE, CATALOG_ROUTE, PARTNERS_ROUTE} from "../../utils/consts.js";
 import logo from '../../assets/image/logo.png'
+import partner from '../../assets/image/partners1.png'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faTelegram, faVk} from "@fortawesome/free-brands-svg-icons";
 
@@ -20,10 +21,15 @@ const Footer = () => {
         <footer className={cl.footer}>
             <div className={cl.footer__container}>
                 <div className={cl.footer__logo}>
-                    <div className={cl.logo__imgContainer}>
-                        <img src={logo} alt={'Логотип компании'} className={cl.logo__img}/>
+                    <div className={cl.logo__container}>
+                        <div className={cl.logo__imgContainer}>
+                            <img src={logo} alt={'Логотип компании'} className={cl.logo__img}/>
+                        </div>
+                        <h3 className={cl.logo__title}>АгроТех-Сервис</h3>
                     </div>
-                    <h3 className={cl.logo__title}>АгроТех-Сервис</h3>
+                    <div className={cl.partner__imgContainer}>
+                        <img src={partner} alt={'Логотип партнера'} className={cl.partner__img}/>
+                    </div>
                 </div>
                 <div className={cl.footer__nav}>
                     <ul className={cl.nav__list}>
