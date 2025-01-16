@@ -39,13 +39,15 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className={cl.footer__social}>
-                    <a className={cl.social__link} href={'https://t.me/+sorjM93RbaMyMGIy'} target="_blank"><FontAwesomeIcon icon={faTelegram}/> Telegram</a>
-                    <a className={cl.social__link} href={'https://vk.com/club225107863'}  target="_blank"><FontAwesomeIcon icon={faVk}/> Вконтакте</a>
+                    <a className={cl.social__link} href={'https://t.me/+sorjM93RbaMyMGIy'}
+                       target="_blank"><FontAwesomeIcon icon={faTelegram}/> Telegram</a>
+                    <a className={cl.social__link} href={'https://vk.com/club225107863'}
+                       target="_blank"><FontAwesomeIcon icon={faVk}/> Вконтакте</a>
                 </div>
                 <div className={cl.footer__info}>
-                    Сайт разработан при поддержке гранта Фонда содействия инновациям, предоставленного в рамках
-                    программы "Студенческий стартап" федерального проекта "Платформа университетского технологического
-                    предпринимательства"
+                    Проект создан при поддержке Федерального государственного бюджетного учреждения "Фонд содействия
+                    развитию малых форм предприятий в научно-технической сфере в рамках программы "Студенческий стартап"
+                    федерального проекта "Платформа университетского технологического предпринимательства
                 </div>
                 <div className={cl.footer__name}>
                     ООО "АгроСупп"
